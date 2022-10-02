@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Signup_Form::customers_support_information"
+         title="Signup Form"
+         translate="title"
+         module="Signup_Form"
+         sortOrder="50"
+         parent="Magento_Customer::customer"
+         resource="Signup_Form::customers_support_information" />
+
+        <add id="Signup_Form::menu"
+         title="Form"
+         module="Signup_Form"
+         sortOrder="100"
+         parent="Signup_Form::customers_support_information"
+         action="signup_form/customer"
+         resource="Signup_Form::menu"/>
+    </menu>
+</config>
